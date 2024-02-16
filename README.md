@@ -1,7 +1,7 @@
 # Coupling fenics-beat with ambit
 
 This repository contains a proof of concept for coupling [`fenics-beat`](https://github.com/finsberg/fenics-beat) together with [`ambit`](https://github.com/marchirschvogel/ambit).
-Note that `fenics-beat` uses legacy FEniCs while `ambit` uses dolfinx so the two simulators what to be run independently.
+Note that `fenics-beat` uses legacy FEniCS while `ambit` uses dolfinx so the two simulators needs to be run independently.
 
 The initial idea would be to first run a monodomain simulation using `fenics-beat` and then saving the resulting active tension in a format that can be read by `ambit`.
 The we will use that active tension to drive the mechanics simulator in `ambit`.
